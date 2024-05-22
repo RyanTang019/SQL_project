@@ -12,14 +12,7 @@ CREATE TABLE public.company_dim
 CREATE TABLE public.skills_dim
 (
     skill_id INT PRIMARY KEY,
-    skills TEXT,INSERT INTO company_dim (company_id, name, link, link_google, thumbnail)
-    VALUES (
-        company_id:integer,
-        'name:text',
-        'link:text',
-        'link_google:text',
-        'thumbnail:text'
-      );
+    skills TEXT,
     type TEXT
 );
 
@@ -67,4 +60,4 @@ CREATE INDEX idx_skill_id ON public.skills_job_dim (skill_id);
 CREATE INDEX idx_job_id ON public.skills_job_dim (job_id);
 
 
-drop TABLE job_applied;
+--drop TABLE job_applied;

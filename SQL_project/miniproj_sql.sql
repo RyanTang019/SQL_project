@@ -1,3 +1,4 @@
 SELECT *
 from job_postings_fact
-limit 100;
+order by salary_year_avg asc
+limit 100
